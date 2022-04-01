@@ -10,8 +10,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class IndexController {
 
-  @Autowired
   private Iservice service;
+  
+  // no es necesario "@Autowired" cuando inicializamos un constructor con un componentes ya reconocido por el container de spring
+  @Autowired
+  public IndexController(Iservice service) {
+    this.service = service;
+  }
 
   @GetMapping({ "/", "", "/index" })
   public String index(Model model) {
