@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class IndexController {
 
-  @Autowired
   private Iservice service;
 
   @GetMapping({ "/", "", "/index" })
@@ -18,4 +17,11 @@ public class IndexController {
     model.addAttribute("objeto", service.operation());
     return "index";
   }
+
+  @Autowired
+  public void setService(Iservice service) {
+    this.service = service;
+  }
+
+  
 }
