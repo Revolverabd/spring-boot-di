@@ -1,6 +1,6 @@
 package com.bolsadeideas.springboot.app.controllers;
 
-import com.bolsadeideas.springboot.app.models.services.Iservicio;
+import com.bolsadeideas.springboot.app.models.services.Iservice;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class IndexController {
 
   @Autowired
-  private Iservicio servicio;
+  private Iservice service;
 
   @GetMapping({ "/", "", "/index" })
   public String index(Model model) {
-    model.addAttribute("objeto", servicio.operacion());
+    model.addAttribute("objeto", service.operation());
     return "index";
   }
 }

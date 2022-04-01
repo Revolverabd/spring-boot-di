@@ -3,10 +3,10 @@ package com.bolsadeideas.springboot.app.models.services;
 import org.springframework.stereotype.Service;
 
 @Service
-public class MiServicio implements Iservicio{
+public class MyService implements Iservice{
 
   @Override
-  public String operacion() {
+  public String operation() {
     return "ejecuntando un proceso importante...";
   }
 }

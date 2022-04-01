@@ -1,7 +1,7 @@
 package com.bolsadeideas.springboot.app.models.services;
 
-public interface Iservicio {
+public interface Iservice {
 
-  public String operacion();
+  public String operation();
   
 }
