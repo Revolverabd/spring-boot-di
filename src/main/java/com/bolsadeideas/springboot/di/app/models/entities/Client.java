@@ -2,7 +2,6 @@ package com.bolsadeideas.springboot.di.app.models.entities;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import org.springframework.web.context.annotation.ApplicationScope;
 import org.springframework.web.context.annotation.RequestScope;
 
 @Component
