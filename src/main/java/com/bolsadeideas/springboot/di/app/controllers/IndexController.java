@@ -1,6 +1,6 @@
-package com.bolsadeideas.springboot.app.controllers;
+package com.bolsadeideas.springboot.di.app.controllers;
 
-import com.bolsadeideas.springboot.app.models.services.IService;
+import com.bolsadeideas.springboot.di.app.models.services.IService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
